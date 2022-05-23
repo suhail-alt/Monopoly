@@ -6,6 +6,27 @@ public class Property {
     private String owner;
     private int price;
 
+    private int rent;
+
+    private int totalInSet = 3;
+
+    private PropertyType type ;
+
+    public Property(String name, String owner, int price, int rent, int totalInSet, PropertyType type) {
+        this.name = name;
+        this.owner = owner;
+        this.price = price;
+        this.rent = rent;
+        this.totalInSet = totalInSet;
+        this.type = type;
+
+        switch (type){
+            case UTILITY:
+                setTotalInSet(2);
+                setPrice(150);
+        }
+    }
+
     public String getName() {
         return name;
     }
@@ -28,5 +49,29 @@ public class Property {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public PropertyType getType() {
+        return type;
+    }
+
+    public void setType(PropertyType type) {
+        this.type = type;
+    }
+
+    public int getRent() {
+        return rent;
+    }
+
+    public void setRent(int rent) {
+        this.rent = rent;
+    }
+
+    public int getTotalInSet() {
+        return totalInSet;
+    }
+
+    public void setTotalInSet(int totalInSet) {
+        this.totalInSet = totalInSet;
     }
 }

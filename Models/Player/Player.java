@@ -1,4 +1,4 @@
-package Models;
+package Models.Player;
 
 import Models.Properties.Property;
 
@@ -9,7 +9,7 @@ public class Player {
     private int money;
     private ArrayList<Property>[] properties;
     private boolean isJailed;
-    private GamePiece gamePiece = new GamePiece();
+    private GamePiece gamePiece;
 
     public Player(String name, int money) {
         this.name = name;
