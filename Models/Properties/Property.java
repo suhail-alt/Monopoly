@@ -25,9 +25,9 @@ public class Property {
                 setTotalInSet(2);
                 setPrice(150);
                 break;
-            case AIRPORT:
-                setTotalInSet(4);
-                setPrice(200);
+//            case AIRPORT:
+//                setTotalInSet(4);
+//                setPrice(200);
 
         }
     }
